@@ -95,35 +95,13 @@
         </ul>
       </nav>
 
-      <script>
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function () {
-          myFunction();
-        };
-
-        // Get the navbar
-        var navbar = document.getElementById("navbar");
-
-        // Get the offset position of the navbar
-        var sticky = navbar.offsetTop;
-
-        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky");
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
-      </script>
-
       <!--------------------------------------------------------END NAVBAR-------------------------------------------------------->
     </header>
 
     <main class="center">
       <article id="a1">
         <h1>Who are we?</h1>
-        <img id="groupPic" src="Img/Group.png" />
+        <img id="groupPic" src="Img/ville.jpg" />
       </article>
 
       <!--------------------------------------------------------ARTICLE NEWS-------------------------------------------------------->
@@ -251,19 +229,45 @@
           rel="noopener"
         ></a>
       </article>
+
+      <div class="social" id="social">
+        <a href="#"><i class="icon ion-social-instagram"></i></a
+        ><a href="#"><i class="icon ion-social-snapchat"></i></a
+        ><a href="#"><i class="icon ion-social-twitter"></i></a
+        ><a href="#"><i class="icon ion-social-facebook"></i></a>
+      </div>
+
+      <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () {
+          myFunction();
+        };
+
+        // Get the navbar
+        var social = document.getElementById("social");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            social.classList.add("sticky");
+          } else {
+            social.classList.remove("sticky");
+          }
+        }
+      </script>
+
     </main>
 
     <!--------------------------------------------------------END TRAVEL MAP-------------------------------------------------------->
 
     <!--------------------------------------------------------BEGIN FOOTER-------------------------------------------------------->
     <div class="footer-basic">
+
       <footer>
-        <div class="social">
-          <a href="#"><i class="icon ion-social-instagram"></i></a
-          ><a href="#"><i class="icon ion-social-snapchat"></i></a
-          ><a href="#"><i class="icon ion-social-twitter"></i></a
-          ><a href="#"><i class="icon ion-social-facebook"></i></a>
-        </div>
+
         <ul class="list-inline">
           <li class="list-inline-item">
             <a href="#">Home</a>
@@ -281,8 +285,11 @@
             <a href="#">About Us</a>
           </li>
         </ul>
+
         <p class="copyright">Finns'Herbes © 2022</p>
+
       </footer>
+
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
