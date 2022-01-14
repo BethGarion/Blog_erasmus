@@ -138,7 +138,7 @@ footer {
   width: 2.7vw;
   height: 2.7vw;
   line-height: 2.7vw;
-  display: inline-block;
+  
   text-align: center;
   border-radius: 50%;
   border: 1px solid black;
@@ -163,5 +163,15 @@ footer {
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 60px;
+}
+
+.opaque
+{
+  opacity: 0.5;
+}
+
+.opaque:hover 
+{
+  opacity: 1.0;
 }
 /* ====================================== END SOCIAL ====================================== */
