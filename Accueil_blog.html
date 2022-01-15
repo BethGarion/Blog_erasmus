@@ -41,41 +41,40 @@
   </head>
 
   <body id="main_page">
-    <header>
-      <div>
-        <div id="logo">
-          <img src="Img/logoh.png" />
-        </div>
-        <h1 class="center">Finns'Herbes</h1>
+    <header>            <!-- ============== HEADER ================-->
+      
+      <!--------------------------------------------------------METEO-------------------------------------------------------->
 
-        <!--------------------------------------------------------HOUR-------------------------------------------------------->
+      <a 
+        class="weatherwidget-io"
+        href="https://forecast7.com/en/62d7922d85/seinajoki/"
+        data-label_1="SEINÄJOKI"
+        data-label_2="WEATHER"
+        data-mode="Current"
+        data-theme="blue-mountains"
+        >SEINÄJOKI WEATHER</a
+      >
 
-        <article class="headerArticle">
-          <!--Dayspedia.com widget-->
-          <iframe
-            width="270"
-            height="163"
-            style="
-              padding: 0 !important;
-              margin: 0 !important;
-              border: none !important;
-              background: none !important;
-              background: transparent !important;
-            "
-            marginheight="0"
-            marginwidth="0"
-            frameborder="0"
-            scrolling="no"
-            comment="/*defined*/"
-            src="https://dayspedia.com/if/digit/?v=1&iframe=eyJ3LTEyIjp0cnVlLCJ3LTExIjpmYWxzZSwidy0xMyI6dHJ1ZSwidy0xNCI6ZmFsc2UsInctMTUiOnRydWUsInctMTEwIjpmYWxzZSwidy13aWR0aC0wIjp0cnVlLCJ3LXdpZHRoLTEiOmZhbHNlLCJ3LXdpZHRoLTIiOmZhbHNlLCJ3LTE2IjoiMjRweCIsInctMTkiOiI0OCIsInctMTciOiIxNiIsInctMjEiOmZhbHNlLCJiZ2ltYWdlIjotMiwiYmdpbWFnZVNldCI6ZmFsc2UsInctMjFjMCI6IiNmZmZmZmYiLCJ3LTAiOmZhbHNlLCJ3LTMiOmZhbHNlLCJ3LTNjMCI6IiMzNDM0MzQiLCJ3LTNiMCI6IjEiLCJ3LTYiOiIjMzQzNDM0Iiwidy0yMCI6dHJ1ZSwidy00IjoiIzAwN2RiZiIsInctMTgiOmZhbHNlLCJ3LXdpZHRoLTJjLTAiOiIzMDAifQ==&lang=en&cityid=13063"
-          ></iframe
-          ><!--Dayspedia.com widget ENDS-->
-        </article>
+      <script>
+        !(function (d, s, id) {
+          var js,
+            fjs = d.getElementsByTagName(s)[0];
+          if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://weatherwidget.io/js/widget.min.js";
+            fjs.parentNode.insertBefore(js, fjs);
+          }
+        })(document, "script", "weatherwidget-io-js");
+      </script>
 
-        <!---------------------------------------------------------END HOUR--------------------------------------------------------->
-      </div>
+      <!--------------------------------------------------------END METEO-------------------------------------------------------->
 
-      <!--------------------------------------------------------NAVBAR-------------------------------------------------------->
+
+      <hr>
+
+      
+    <!--------------------------------------------------------NAVBAR-------------------------------------------------------->
 
       <nav id="navbar">
         <ul class="topnav">
@@ -95,15 +94,37 @@
         </ul>
       </nav>
 
-      <!--------------------------------------------------------END NAVBAR-------------------------------------------------------->
-    </header>
+    <!--------------------------------------------------------END NAVBAR-------------------------------------------------------->
 
-    <main class="center">
-      <article id="a1">
-        <h1>Who are we?</h1>
+    </header>             <!-- ============ END HEADER ==============-->
+
+
+    <main class="center"> <!-- =============== MAIN =================-->
+      
+      <div>
+        <!--------------------------------------------------------HOUR-------------------------------------------------------->
+        
+        <!-- <article class="headerArticle right"> -->
+
+          <!-- <iframe -->
+            <!-- width="270" -->
+            <!-- height="163" -->
+            <!-- marginheight="0" -->
+            <!-- marginwidth="0" -->
+            <!-- frameborder="0" -->
+            <!-- scrolling="no" -->
+            <!-- comment="/*defined*/" -->
+            <!-- src="https://dayspedia.com/if/digit/?v=1&iframe=eyJ3LTEyIjp0cnVlLCJ3LTExIjpmYWxzZSwidy0xMyI6dHJ1ZSwidy0xNCI6ZmFsc2UsInctMTUiOnRydWUsInctMTEwIjpmYWxzZSwidy13aWR0aC0wIjp0cnVlLCJ3LXdpZHRoLTEiOmZhbHNlLCJ3LXdpZHRoLTIiOmZhbHNlLCJ3LTE2IjoiMjRweCIsInctMTkiOiI0OCIsInctMTciOiIxNiIsInctMjEiOmZhbHNlLCJiZ2ltYWdlIjotMiwiYmdpbWFnZVNldCI6ZmFsc2UsInctMjFjMCI6IiNmZmZmZmYiLCJ3LTAiOmZhbHNlLCJ3LTMiOmZhbHNlLCJ3LTNjMCI6IiMzNDM0MzQiLCJ3LTNiMCI6IjEiLCJ3LTYiOiIjMzQzNDM0Iiwidy0yMCI6dHJ1ZSwidy00IjoiIzAwN2RiZiIsInctMTgiOmZhbHNlLCJ3LXdpZHRoLTJjLTAiOiIzMDAifQ==&lang=en&cityid=13063" -->
+          <!-- ></iframe -->
+          <!--Dayspedia.com widget ENDS-->
+        <!-- </article>  -->
+        
+        
+        <!---------------------------------------------------------END HOUR--------------------------------------------------------->
+      </div>
+      
         <img id="groupPic" src="Img/ville.jpg" />
-      </article>
-
+     
       <!--------------------------------------------------------ARTICLE NEWS-------------------------------------------------------->
 
       <article id="a2">
@@ -151,32 +172,6 @@
 
       <!--------------------------------------------------------END ARTICLE NEWS-------------------------------------------------------->
 
-      <!--------------------------------------------------------METEO-------------------------------------------------------->
-
-      <a
-        class="weatherwidget-io"
-        href="https://forecast7.com/en/62d7922d85/seinajoki/"
-        data-label_1="SEINÄJOKI"
-        data-label_2="WEATHER"
-        data-mode="Current"
-        data-theme="blue-mountains"
-        >SEINÄJOKI WEATHER</a
-      >
-
-      <script>
-        !(function (d, s, id) {
-          var js,
-            fjs = d.getElementsByTagName(s)[0];
-          if (!d.getElementById(id)) {
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://weatherwidget.io/js/widget.min.js";
-            fjs.parentNode.insertBefore(js, fjs);
-          }
-        })(document, "script", "weatherwidget-io-js");
-      </script>
-
-      <!--------------------------------------------------------END METEO-------------------------------------------------------->
 
       <!--------------------------------------------------------TRAVEL MAP-------------------------------------------------------->
 
@@ -230,7 +225,12 @@
         ></a>
       </article>
 
-      <div class="social" id="social">
+      <!--------------------------------------------------------END TRAVEL MAP-------------------------------------------------------->
+
+
+      <!------------------------------------------------------------SOCIAL------------------------------------------------------------>
+
+      <div class="social opaque" id="social">
         <a href="#"><i class="icon ion-social-instagram opaque"></i></a
         ><a href="#"><i class="icon ion-social-snapchat opaque"></i></a
         ><a href="#"><i class="icon ion-social-twitter opaque"></i></a
@@ -259,9 +259,10 @@
         }
       </script>
 
+      <!--------------------------------------------------------END SOCIAL-------------------------------------------------------->
     </main>
 
-    <!--------------------------------------------------------END TRAVEL MAP-------------------------------------------------------->
+    
 
     <!--------------------------------------------------------BEGIN FOOTER-------------------------------------------------------->
     <div class="footer-basic">

@@ -2,16 +2,42 @@
   margin: auto;
 }
 
+hr {
+  color: rgb(255, 251, 0);
+  size: 50px;
+  width: max-content;
+  margin:0;
+  padding:0;
+  position:fixed;
+}
+
+@viewport {
+  width: device-width;
+}
+
 #groupPic {
-  width: 80vw;
-  height: auto;
-  margin: auto;
-  padding-bottom: 3vw;
+  width: 100%;
+  height:max-content;
+  padding-right:0vw;
+  padding-left:0vw;
+  margin: 0;
+  padding-bottom: 0;
 }
 
 main {
   margin: 100px;
 }
+
+.headerArticle {
+padding: 1vw !important;
+margin: 1vw !important;
+border: none !important;
+background: none;
+background: transparent;
+
+}
+
+
 
 /* ====================================== GALERIE ====================================== */
 /* J'ai récupéré le code trouvé sur : https://www.guyom-design.com/blog/astuces/css/tuto_diapo_css/#! */
@@ -31,7 +57,7 @@ img {
 /* englobe le slider */
 
 .cadre_diapo {
-  max-width: 500px;
+  max-width: 850px;
   margin: 2rem auto;
   overflow: hidden;
   margin-top: auto;
@@ -103,6 +129,10 @@ img {
 
 /* ====================================== END GALERIE ====================================== */
 
+
+
+/* ====================================== BACKGROUND ====================================== */
+
 #a1 {
   background-color: rgb(173, 235, 255);
   color: rgb(49, 49, 49);
@@ -110,6 +140,21 @@ img {
 #a2 {
   background-color: rgb(49, 49, 49);
   color: white;
+}
+
+/* ======================================END BACKGROUND ====================================== */
+
+.center{
+  margin: auto;
+  text-align: center;
+}
+
+.left{
+  float:left;
+}
+
+.right {
+  float: right;
 }
 
 h1 {

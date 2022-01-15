@@ -4,6 +4,7 @@
   margin: auto;
   text-align: center;
 }
+
 body {
   margin: 0;
 }
@@ -69,10 +70,6 @@ header > div {
   width: fit-content;
 }
 
-header {
-  background-image: url("../Img/snow4.gif");
-}
-
 /* ======================================= END HEADER ====================================== */
 
 
@@ -114,8 +111,7 @@ footer {
   padding: 0.5vw;
   margin: 0;
   border-color: black;
-  background-color: rgb(102,102,102);       /* Ici je vais faire en sorte que mon cadre soit transparent*/ 
-  background-color: rgb(49, 49, 49, 0.4); /*             Mais que mon texte ne le soit pas            */
+  background-color: rgb(49, 49, 49);
   color: white;
 }
 
@@ -135,16 +131,16 @@ footer {
 .social > a {
   float: right;
   font-size: 1.5vw;
-  width: 2.7vw;
-  height: 2.7vw;
+  width: 2.8vw;
+  height: 2.8vw;
   line-height: 2.7vw;
-  
   text-align: center;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0, 0.7);
   margin: 0.7vw;
-  color: black;
-  opacity: 0.75;
+  color: rgb(165, 174, 177);
+  background-color: rgb(240, 248, 255, 0.3);
+  opacity: 1;
   z-index: 3;
 }
 
@@ -167,11 +163,30 @@ footer {
 
 .opaque
 {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
-.opaque:hover 
+.opaque:hover.ion-social-instagram
 {
   opacity: 1.0;
+  color:rgb(253,29,29);
+}
+
+.opaque:hover.ion-social-snapchat
+{
+  opacity: 1.0;
+  color:rgb(255, 252, 0);
+}
+
+.opaque:hover.ion-social-facebook
+{
+  opacity: 1.0;
+  color:rgb(59,89,152);
+}
+
+.opaque:hover.ion-social-twitter 
+{
+  opacity: 1.0;
+  color:rgb(0,172,238);
 }
 /* ====================================== END SOCIAL ====================================== */
