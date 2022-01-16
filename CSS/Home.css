@@ -2,14 +2,16 @@
   margin: auto;
 }
 
+
 hr {
-  color: rgb(255, 251, 0);
-  size: 50px;
-  width: max-content;
+  border: none;
+  border-top: 2px solid rgb(0, 0, 0);
+  overflow: visible;
+  text-align: center;
   margin:0;
   padding:0;
-  position:fixed;
 }
+
 
 @viewport {
   width: device-width;
@@ -168,3 +170,4 @@ h1 {
   padding-top: 2vw;
   padding-bottom: 2vw;
 }
+

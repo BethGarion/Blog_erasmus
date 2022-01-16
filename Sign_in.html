@@ -66,47 +66,29 @@
         <!---------------------------------------------------------END HOUR--------------------------------------------------------->
       </div>
 
-      <!--------------------------------------------------------NAVBAR-------------------------------------------------------->
+    <!--------------------------------------------------------NAVBAR-------------------------------------------------------->
 
-      <nav id="navbar">
-        <ul class="topnav">
-          <li><a href="Accueil_blog.html">Home</a></li>
-          <li>
-            <a href="Geography&Info.html">Geography & Info</a>
-          </li>
-          <li>
-            <a href="Travel&transport.html">Travel & Transport</a>
-          </li>
-          <li class="right">
-            <a href="Sign_in.html">Sign up</a>
-          </li>
-          <li><a href="Visit.html">Discover Finland</a></li>
-        </ul>
-      </nav>
+    <nav id="navbar">
+      <ul class="topnav">
+        <li>
+          <a class="active" href="Accueil_blog.html">Home</a>
+        </li>
+        <li>
+          <a href="Geography&Info.html">Geography & Info</a>
+        </li>
+        <li>
+          <a href="Travel&transport.html">Travel & Transport</a>
+        </li>
+        <li class="right">
+          <a href="Sign_in.html">Sign up</a>
+        </li>
+        <li><a href="Visit.html">Discover Finland</a></li>
+      </ul>
+    </nav>
 
-      <script>
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function () {
-          myFunction();
-        };
+  <!--------------------------------------------------------END NAVBAR-------------------------------------------------------->
 
-        // Get the navbar
-        var navbar = document.getElementById("navbar");
-
-        // Get the offset position of the navbar
-        var sticky = navbar.offsetTop;
-
-        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky");
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
-      </script>
-
-      <!--------------------------------------------------------END NAVBAR-------------------------------------------------------->
+  
     </header>
 
     <!--------------------------------------------------------BEGIN FOOTER-------------------------------------------------------->
