@@ -29,22 +29,6 @@ h1 {
 
 
 
-/* ==================================== BARRE HORIZONTALE NOIR ==================================== */
-
-hr {
-  border: none;
-  border-top: 2px solid rgb(0, 0, 0);
-  overflow: visible;
-  text-align: center;
-  margin:0;
-  padding:0;
-}
-
-/* ==================+=============== END BARRE HORIZONTALE NOIR ===============+================== */
-
-
-
-
 /* ====================================== IMAGES ====================================== */
 
 #groupPic {
