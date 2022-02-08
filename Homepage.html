@@ -1,55 +1,36 @@
 <!DOCTYPE html>
 <html lang="English">
+
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
-    />
 
-    <link rel="stylesheet" href="CSS/CSS_Global.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="CSS/Global.css" />
     <link rel="stylesheet" href="CSS/Home.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="Img\icone_travel.png"
-    />
+    <linK rel="icon" type="image/png" sizes="16x16" href="Img\icone_travel.png" />
 
-    <title>Finns'Herbes</title>
+    <title>Home Page</title>
 
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <meta
-      name="keywords"
-      content="HTML, Erasmus, Finlande, blog, voyage, Trip, story, image"
-    />
-    <meta
-      name="author"
-      content="Thomas Perrault - Killian Boisseau -  Emma Bigaret - Inès Meriel-Bussy"
-    />
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="HTML, Erasmus, Finlande, blog, voyage, Trip, story, image" />
+    <meta name="author" content="Thomas Perrault - Killian Boisseau -  Emma Bigaret - Inès Meriel-Bussy" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Follow the adventure of 3 Esaipien, lost in Finland."
-    />
+    <meta name="description" content="Follow the adventure of 3 Esaipien, lost in Finland." />
     <meta name="language" content="en, fr" />
+
   </head>
 
   <body id="main_page">
 
-    <script>
+    <script> // Script for the Social Media Hyperlink and features
       $("#example").bind("mousewheel",function(ev, delta) {
           var scrollTop = $(this).scrollTop();
           $(this).scrollTop(scrollTop-Math.round(delta));
       });
       </script>
 
-    <header>            <!-- ============== HEADER ================-->
+    <header>
       
     <!--------------------------------------------------------METEO-------------------------------------------------------->
 
@@ -81,15 +62,14 @@
     <!--------------------------------------------------------END METEO-------------------------------------------------------->
 
 
-    <hr>
-      
+
 
     <!--------------------------------------------------------NAVBAR-------------------------------------------------------->
 
       <nav id="navbar">
         <ul class="topnav">
           <li>
-            <a class="active" href="Accueil_blog.html">Home</a>
+            <a class="active" href="Homepage.html">Home</a>
           </li>
           <li>
             <a href="Geography&Info.html">Geography & Info</a>
@@ -98,7 +78,7 @@
             <a href="Travel&transport.html">Travel & Transport</a>
           </li>
           <li class="right">
-            <a href="Sign_in.html">Sign up</a>
+            <a href="AboutUs.html">Sign up</a>
           </li>
           <li><a href="Visit.html">Discover Finland</a></li>
         </ul>
@@ -106,16 +86,15 @@
 
     <!--------------------------------------------------------END NAVBAR-------------------------------------------------------->
 
-    </header>             <!-- ============ END HEADER ==============-->
+    </header>  
 
 
-    <main class="center inner"> <!-- =============== MAIN =================-->
+    <main class="center inner">
       
       <hr>
 
       
-
-    <!--------------------------------------------------------HOUR-------------------------------------------------------->
+      <!--------------------------------------------------------HOUR-------------------------------------------------------->
       
       <!--<div>  -->
         <!-- <article class="headerArticle right"> -->
@@ -138,9 +117,9 @@
       <!---------------------------------------------------------END HOUR--------------------------------------------------------->
       
       
-        <img id="groupPic" src="Img/ville.jpg" />
+      <img id="groupPic" src="Img/ville.jpg" />
 
-        <hr>
+      <hr>
      
 
       <!--------------------------------------------------------ARTICLE NEWS-------------------------------------------------------->
@@ -190,7 +169,9 @@
 
       <!--------------------------------------------------------END ARTICLE NEWS-------------------------------------------------------->
 
+
       <hr>
+
 
       <!--------------------------------------------------------TRAVEL MAP-------------------------------------------------------->
 
@@ -280,44 +261,49 @@
           }
         }
       </script>
-  </main>
 
-  <!--------------------------------------------------------END SOCIAL-------------------------------------------------------->
+      <!--------------------------------------------------------END SOCIAL-------------------------------------------------------->
+
+    </main>
+
   
-  <hr>
 
-  <!--------------------------------------------------------BEGIN FOOTER-------------------------------------------------------->
+    <hr>
+
+  
+    <!--------------------------------------------------------BEGIN FOOTER-------------------------------------------------------->
+    
     <div class="footer-basic">
 
-      <footer>
+    <footer>
 
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="#">Home</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Geography & Infos </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Travel & Transport</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Discover Finland</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">About Us</a>
-          </li>
-        </ul>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="#">Home</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Geography & Infos </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Travel & Transport</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Discover Finland</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">About Us</a>
+        </li>
+      </ul>
 
-        <p class="copyright">Finns'Herbes © 2022</p>
+      <p class="copyright">Finns'Herbes © 2022</p>
 
-      </footer>
+    </footer>
 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    
+    <!--------------------------------------------------------END FOOTER-------------------------------------------------------->
+  
   </body>
-
-  <!--------------------------------------------------------END FOOTER-------------------------------------------------------->
-
-  </html>
+</html>

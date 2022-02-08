@@ -1,8 +1,35 @@
-/* svg > jpg > png  : il faut absolument compresser*/ 
-.cadre_diapo {
-  margin: auto;
+                        /* svg > jpg > png  : il faut absolument compresser */ 
+
+
+                        
+
+/* ====================================== MISE EN PAGE ====================================== */
+
+main {
+  margin: 100px;
 }
 
+@viewport {
+  width: device-width;
+}
+
+.center{
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  text-align: left;
+  margin-left: 9vw;
+  padding-top: 2vw;
+}
+
+/* ====================================== END MISE EN PAGE ====================================== */
+
+
+
+
+/* ==================================== BARRE HORIZONTALE NOIR ==================================== */
 
 hr {
   border: none;
@@ -13,10 +40,12 @@ hr {
   padding:0;
 }
 
+/* ==================+=============== END BARRE HORIZONTALE NOIR ===============+================== */
 
-@viewport {
-  width: device-width;
-}
+
+
+
+/* ====================================== IMAGES ====================================== */
 
 #groupPic {
   width: 100%;
@@ -27,9 +56,12 @@ hr {
   padding-bottom: 0;
 }
 
-main {
-  margin: 100px;
-}
+/* ====================================== END IMAGES ====================================== */
+
+
+
+
+/* ====================================== HEURE ====================================== */
 
 .headerArticle {
 padding: 1vw !important;
@@ -40,12 +72,26 @@ background: transparent;
 
 }
 
+/* ====================================== END HEURE ====================================== */
+
+
 
 
 /* ====================================== GALERIE ====================================== */
 /* J'ai récupéré le code trouvé sur : https://www.guyom-design.com/blog/astuces/css/tuto_diapo_css/#! */
+
 * {
   box-sizing: border-box;
+}
+
+.cadre_diapo {
+  margin: auto;
+}
+
+.travel {
+  margin-bottom: 0;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
 }
 
 img {
@@ -134,6 +180,7 @@ img {
 
 
 
+
 /* ====================================== BACKGROUND ====================================== */
 
 #a1 {
@@ -147,35 +194,14 @@ img {
 
 /* ====================================== END BACKGROUND ====================================== */
 
-.center{
-  margin: auto;
-  text-align: center;
-}
 
-.left{
-  float:left;
-}
-
-.right {
-  float: right;
-}
-
-h1 {
-  text-align: left;
-  margin-left: 9vw;
-  padding-top: 2vw;
-}
-
-.travel {
-  margin-bottom: 0;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
-}
 
 
 /* ========================================== METEO ========================================== */
 
-
+.weatherwidget-io {
+  border-bottom: 1px;
+}
 
 /* ====================================== END METEO ====================================== */
 
